@@ -22,6 +22,7 @@ public class DepartmentController {
 	@Autowired
 	private DepartmentService departmentService;
 	
+	
 	@PostMapping("/departments")
 	public Department saveDepartment( @Valid @RequestBody Department department) {
 		return departmentService.saveDepartment(department);
